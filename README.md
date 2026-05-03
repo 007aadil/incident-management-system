@@ -74,7 +74,7 @@ npm start
 
 ---
 
-## 📡 API Example
+##  API Example
 
 ### Send Signal
 
