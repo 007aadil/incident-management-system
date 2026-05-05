@@ -46,13 +46,24 @@ React UI → Express API → Queue → Worker → PostgreSQL
 
 ## Setup Instructions
 
-### 1. Start PostgreSQL (Docker)
+## Running PostgreSQL with Docker
+
+Make sure Docker Desktop is installed and running.
+
+---
+
+###  Step 1: Start Database
 
 ```bash
 docker compose up -d
-```
 
----
+### Step 2 : Verify Container
+
+docker ps
+
+### Step 3 : Access PostgreSQL
+
+docker exec -it ims-postgres psql -U postgres -d ims
 
 ### 2. Run Backend
 
@@ -67,7 +78,7 @@ node src/index.js
 ### 3. Run Frontend
 
 ```bash
-cd frontend
+cd frontend\ims-frontend
 npm install
 npm start
 ```
