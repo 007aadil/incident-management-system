@@ -65,7 +65,7 @@ docker ps
 
 docker exec -it ims-postgres psql -U postgres -d ims
 
-### 2. Run Backend
+**### 2. Run Backend**
 
 ```bash
 cd backend
